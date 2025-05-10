@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jisan Hossain Badun - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="loader">
+    <h1>Welcome My Portfolio</h1>
+  </div>
+
+  <header>
+    <h1 class="name-animate">Jisan Hossain Badun</h1>
+    <div class="profile-pic">
+      <img src="jisan_circular_photo.png" alt="Jisan Hossain Badun"/>
+    </div>
+    <p>I am a professional <strong>App & Web Developer</strong>, UI/UX Designer with experience in 3D Animation, Digital Marketing, and CPA Marketing.</p>
+  </header>
+
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="card">Apps & Web Developer</div>
+    <div class="card">UI/UX & Design</div>
+    <div class="card">Digital Marketing</div>
+    <div class="card">CPA Marketing</div>
+  </section>
+
+  <section class="special-skills">
+    <h2>My Special Skills</h2>
+    <div class="skill-3d" onclick="animateCard(this)">
+      <h3>HTML</h3>
+      <div class="bar"><div style="width: 95%"></div></div>
+    </div>
+    <div class="skill-3d" onclick="animateCard(this)">
+      <h3>CSS</h3>
+      <div class="bar"><div style="width: 90%"></div></div>
+    </div>
+    <div class="skill-3d" onclick="animateCard(this)">
+      <h3>JavaScript</h3>
+      <div class="bar"><div style="width: 85%"></div></div>
+    </div>
+    <div class="skill-3d" onclick="animateCard(this)">
+      <h3>Python</h3>
+      <div class="bar"><div style="width: 75%"></div></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>
+      <a href="https://www.facebook.com/share/12JQ4VLMfag/?mibextid=qi2Omg" target="_blank">
+        <i class="fab fa-facebook-f" style="color:#1877F2; font-size: 24px; margin-right: 8px;"></i><strong>Facebook</strong>
+      </a>
+      |
+      <a href="mailto:jisanhossainbadun@gmail.com">
+        <i class="fas fa-envelope" style="color:#EA4335; font-size: 24px; margin-right: 8px;"></i><strong>jisanhossainbadun@gmail.com</strong>
+      </a>
+    </p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    function animateCard(el) {
+      el.classList.add('flip');
+      setTimeout(() => el.classList.remove('flip'), 1000);
+    }
+  </script>
+</body>
+</html>
