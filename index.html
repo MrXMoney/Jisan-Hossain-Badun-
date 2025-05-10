@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,12 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- SEO Optimization -->
+  <meta name="description" content="Jisan Hossain Badun - Apps & Web Developer, UI/UX Designer, 3D Animator, Digital Marketing Expert">
+  <meta name="keywords" content="Jisan Hossain Badun, Web Developer, App Developer, UI/UX, Digital Marketing, CPA Marketing, Portfolio, HTML, CSS, JavaScript, Bangladesh">
+  <meta name="author" content="Jisan Hossain Badun">
+  <link rel="canonical" href="https://mrxmoney.github.io/Jisan-Hossain-Badun/" />
 </head>
 <body>
 
@@ -22,6 +27,26 @@
     </div>
     <p>I am a professional <strong>App & Web Developer</strong>, UI/UX Designer with experience in 3D Animation, Digital Marketing, and CPA Marketing.</p>
   </header>
+
+  <section class="about-me">
+    <h2>About Me</h2>
+    <div class="about-card" onclick="flipAbout(this)">
+      <div class="front">
+        <p>Click to know more about me!</p>
+      </div>
+      <div class="back">
+        <p>
+          I'm Jisan Hossain Badun, a passionate and versatile Apps & Web Developer with expertise in UI/UX Design, 3D Animation, and modern frontend technologies. I bring ideas to life through beautiful and functional digital experiences.
+          <br><br>
+          With a strong foundation in HTML, CSS, and JavaScript, I craft responsive websites and Android apps that are both intuitive and impactful.
+          <br><br>
+          Beyond development, I specialize in Digital Marketing and CPA Marketing, helping businesses grow their online presence and achieve real results.
+          <br><br>
+          Whether you need a stunning interface, a high-performance web app, or a marketing strategy that converts — I'm here to help your vision become reality.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <section class="skills">
     <h2>My Skills</h2>
@@ -74,6 +99,9 @@
     function animateCard(el) {
       el.classList.add('flip');
       setTimeout(() => el.classList.remove('flip'), 1000);
+    }
+    function flipAbout(el) {
+      el.classList.toggle('flip');
     }
   </script>
 </body>
